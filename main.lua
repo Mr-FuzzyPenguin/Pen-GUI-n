@@ -10,10 +10,15 @@ function initUi()
         ["accelerator"] = "e"
     });
     app.registerUi({
-        ["menu"] = "Eraser tool",
+        ["menu"] = "Text tool",
         ["callback"] = "text",
         ["accelerator"] = "t"
     });
+    app.registerUi({
+        ["menu"] = "Hand tool",
+        ["callback"] = "hand",
+        ["accelerator"] = "h"
+    });    
     app.registerUi({
         ["menu"] = "Rectangular Select tool",
         ["callback"] = "rect_sel",
@@ -38,6 +43,10 @@ end
 
 function pen()
     app.uiAction({ ["action"] = "ACTION_TOOL_PEN" })
+end
+
+function hand()
+    app.uiAction({ ["action"] = "ACTION_TOOL_HAND"})
 end
 
 function eraser()
