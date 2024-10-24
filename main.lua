@@ -10,7 +10,7 @@ function initUi()
         ["accelerator"] = "e"
     });
     app.registerUi({
-        ["menu"] = "Eraser tool",
+        ["menu"] = "Text tool",
         ["callback"] = "text",
         ["accelerator"] = "t"
     });
