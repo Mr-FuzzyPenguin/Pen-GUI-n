@@ -12,6 +12,3 @@ Simple as that.
 - [ ] Colors using 1-9 keys
 - [ ] Config file
 - [ ] GUI to edit custom keybinds
-<br>
-# License
-[MIT License](./LICENSE)
