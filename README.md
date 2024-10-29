@@ -9,6 +9,5 @@ git clone "https://github.com/Mr-FuzzyPenguin/Pen-GUI-n.git"
 Simple as that.
 <br>
 # WIP (ordered in order of importance):
-- [ ] Colors using 1-9 keys
 - [ ] Config file
 - [ ] GUI to edit custom keybinds
