@@ -11,9 +11,6 @@ Simple as that.
 # WIP (ordered in order of importance):
 - [ ] Read a config file (coming in 1.5+)
 - [ ] Have a GUI to edit custom keybinds (coming in 2.0+)
-<br>
 # Changelog:
-<br>
-### 1.0.0
-<br>
+#### 1.0.0
 Added a bunch of accelerators for the (P)en tool, (E)raser, highlighter (V), (R)ectangular and (S)urface/squiggly selection, te(X), and (T)ext tools.
