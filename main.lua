@@ -34,10 +34,17 @@ function initUi()
         ["callback"] = "latex",
         ["accelerator"] = "x"
     });
+    app.registerUi({
+        ["menu"] = "Toggle dashed pen",
+        ["callback"] = "pen_dashed",
+        ["accelerator"] = "d"
+    });
 end
 
 function pen()
     app.uiAction({ ["action"] = "ACTION_TOOL_PEN" })
+    app.uiAction({ ["action"] = "ACTION_TOOL_LINE_STYLE_PLAIN" })
+
 end
 
 function eraser()
@@ -62,4 +69,15 @@ end
 
 function latex()
     app.uiAction({ ["action"] = "ACTION_TEX" })
+end
+
+local dashed = false
+function pen_dashed()
+    if dashed then 
+	pen()
+    else
+        app.uiAction({ ["action"] = "ACTION_TOOL_PEN" })
+        app.uiAction({ ["action"] = "ACTION_TOOL_LINE_STYLE_DASH" })
+    end	
+    dashed = not dashed
 end
